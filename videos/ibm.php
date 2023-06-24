@@ -1,0 +1,31 @@
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => 'https://d97206cb.us-south.apigw.appdomain.cloud/LVkc7e/nigpChapter2/getTransformedFile',
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => '',
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => 'POST',
+  CURLOPT_POSTFIELDS =>'{
+  "fileName": "test.csv",
+  "fileData": "TYPE,LASTNAME,FIRSTNAME,STATUS,JOIN DATE,RENEWED,USERNAME,NATIONAL MEMBER,YEAR JOINED NATIONAL,EMPLOYER,EMPLOYER CLASSIFICATION,YEAR JOINED AFFILIATE,NIGP MEMBERSHIP NUMBER,EMPLOYER ADDRESS,EMPLOYER ADDRESS (CONT),EMPLOYER CITY,EMPLOYER STATE,EMPLOYER ZIP CODE,EMPLOYER EMAIL,RECEIVE EMAILS,BIRTHDAY CONGRATULATIONS,CERTIFICATION EXPIRATION,COMMITTEE OPENINGS,EARLY MEMBERSHIP RENEWAL OPEN,JOB OPPORTUNITIES,MEETING DUNNING,MEMBERSHIP DUNNING,MEMBERSHIP RENEWAL,NEW MEMBER APPROVED & WELCOME,NEW MEMBER NOTIFICATION,NEW MEMBER PENDING APPROVAL,NEW MEMBER WELCOME,UPCOMING EVENT,EMPLOYER PHONE,EMPLOYER PHONE EXT,EMPLOYER FAX,EMPLOYER FAX EXT,EMPLOYER MOBILE,EMPLOYER WEB SITE,BOARD POSITION,TITLE,DEPARTMENT,HOME ADDRESS,HOME ADDRESS (CONT),HOME CITY,HOME STATE,HOME ZIP CODE,HOME EMAIL,HOME PHONE,BIRTHDAY,COMMENTS,POINTS,CEUS,HOURS,CPPB,CPPB NUMBER,CPPB ISSUED,CPPB EXPIRES,CPPO,CPPO NUMBER,CPPO ISSUED,CPPO EXPIRES,C.P.M.,C.P.M. NUMBER,C.P.M. ISSUED,C.P.M. EXPIRES,CPCP,CPCP NUMBER,CPCP ISSUED,CPCP EXPIRES,CPO,CPO NUMBER,CPO ISSUED,CPO EXPIRES,MEMBERSHIP START DATE,MEMBERSHIP EXPIRATION DATE,FIRST PAYMENT,PAYMENT SOURCE\\r\\nRegular Member,Whitney Whitney Whitney Whitney Whitney Whitney Whitney.jr,Dana Melissa Dana Melissa Dana Melissa Dana Melissa,Expired,\\"Aug 28, 2020\\",No,Dana,No,,canon,,,,128 Main Street,,Canon City,Colorado,81212,dmwhitney@canoncity.org,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,7192765243,,7192699017,,,,,Senior Purchaser,Finance,,,,Colorado,,just4me97@aol.com,,,,0,0,0,,,,,,,,,,,,,,,,,,,,,01/01,\\"Dec 31, 2020\\",08-28-2020,\\r\\nRegular Member,Buchanan,Kim,Active,\\"Feb 25, 2022\\",No,kbuchanan,Yes,2022,Colorado Mountain College,education college,,,802 Grand Avenue,,Glenwood Springs,Colorado,81601,kbuchanan@coloradomtn.edu,Yes,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,9709478400,,,,9706184156,https://coloradomtn.edu/,,Procurement Specialist,Purchasing,102 Polo Road,,Glenwood Springs,Colorado,81601,kbuchanan@coloradomtn.edu,9706184156,10/15,,0,0,0,,,,,,,,,,,,,,,,,,,,,01/01,\\"Dec 31, 2022\\",02-25-2022,Employer\\r\\nRegular Member,Cleator,Mary,Active,\\"Mar 4, 2021\\",No,mcleator@coloradomtn.edu,Yes,2018,Colorado Mountain College,education college,2021,,802 Grand Avenue,,Glenwood Springs,Colorado,81601,mcleator@coloradomtn.edu,Yes,Yes,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,9709478401,,,,,http://www.coloradomtn.edu,,Purchasing Admin Asst.,Purchasing,PO Box 1316,,Glenwood Springs,Colorado,81602,,9702740148,10/06,,0,0,1,,,,,,,,,,,,,,,,,,,,,01/01,\\"Dec 31, 2022\\",03-04-2021,Employer\\r\\nRegular Member,Corriveau,Melissa,Active,\\"Sep 24, 2018\\",No,Corriveau,No,,Aims Community College,education college,,,54011 W 20TH ST,Purchasing,GREELEY,Colorado,80634,melissa.corriveau@aims.edu,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,9703396207,,,,,,,Buyer,Purchasing,,,,Colorado,,connie.lataille@aims.edu,,,,0,0,5.5,,,,,,,,,,,,,,,,,,,,,01/01,\\"Dec 31, 2022\\",09-24-2018,Employer\\r\\nRegular Member,Felts,Zac,Expired,,No,zachary.felts@ahec.edu,No,,Auraria Higher Education Center,education college,2017,,\\"1201 5th Street, Suite 370\\",,Denver,Colorado,80204,zachary.felts@ahec.edu,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,3035564295,,3035562093,,,https://www.ahec.edu,,Purchasing Agent,Procurement Services,,,,Colorado,,,,,,0,0,0,,,,,,,,,,,,,,,,,,,,,01/01,\\"Dec 31, 2020\\",03-03-2017,\\r\\nRegular Member,Florez,Angela,Active,,No,Angela.Florez@aims.edu,No,,Aims Community College,education college,,,5401 W 20th Street,,Greeley,Colorado,80634,Angela.Florez@aims.edu,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,9703396200,,,,,,,,,,,,Colorado,,,,,,0,0,0,,,,,,,,,,,,,,,,,,,,,01/01,\\"Dec 31, 2022\\",11-04-2021,Employer\\r\\nRegular Member,Hanson,Julie,Active,\\"Jan 2, 2018\\",No,jshanson@coloradomtn.edu,Yes,,Colorado Mountain College,education college,,,802 Grand Avenue,,Glenwood Springs,Colorado,81601,jshanson@coloradomtn.edu,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,9709478402,,,,9702740947,,,Director of Purchasing & Contracts,Purchasing,,,,Colorado,,,,,,5.75,1,13.5,,,,,,,,,,,,,,,,,,,,,01/01,\\"Dec 31, 2022\\",01-02-2018,Employer\\r\\nRegular Member,Heckman,Cynthia,Active,\\"Mar 11, 2021\\",No,Checkman,No,,Colorado Mountain College,education college,,,802 Grand Ave,,Glenwood Springs,Colorado,81601,checkman2@coloradomtn.edu,No,No,Yes,Yes,Yes,No,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,9703848510,,,,,,,,,,,,Alabama,,checkman2@coloradomtn.edu,,,,0,0,1,,,,,,,,,,,,,,,,,,,,,01/01,\\"Dec 31, 2022\\",03-11-2021,Employer\\r\\nRegular Member,Hohn,Daniel,Active,,No,Daniel.Hohn,No,,Arapahoe Community College,education college,,,5900 S Santa Fe Driv,,Littleton,Colorado,80120,daniel.hohn@arapahoe.edu,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,3037975753,,,,3033306264,,,Purchasing Coordinator,Fiscal Services,7450 S Reed Ct,,Littleton,Colorado,80128,tdhohn@q.com,3039321594,02/08,,0,0,4,,,,,,,,,,,,,,,,,,,,,01/01,\\"Dec 31, 2022\\",08-05-2015,Employer\\r\\nRegular Member,Horch,Kevin,Active,\\"Sep 7, 2021\\",No,khorch@coloradomtn.edu,No,,Colorado Mountain College,education college,,,802 Grand Ave,,Glenwood Springs,Colorado,81601,khorch@coloradomtn.edu,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,Yes,9709478400,,,,,http://coloradomtn.edu,,Procurement Specialist,Purchasing and Contracts,,,,Colorado,,,,,,0,0,0,,,,,,,,,,,,,,,,,,,,,01/01,\\"Dec 31, 2022\\",09-07-2021,Employer\\r\\n",
+   "emailAddresses": "gulam.gaus@zorang.com"
+}',
+  CURLOPT_HTTPHEADER => array(
+    'X-IBM-Client-Id: acef02eb-39c2-48cc-81d1-e21a439f1a29',
+    'Content-Type: application/json'
+  ),
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+
+echo "<pre>";
+print_r($response);
